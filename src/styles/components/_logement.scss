@@ -1,0 +1,21 @@
+
+.logement{
+      border-radius: 25px;
+      margin: 2rem;
+      padding: 20px;
+      background-color: $color-gris;
+      
+      ul{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        }
+      li{
+        width: 340px;
+        height: 340px;
+        margin: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+  }

@@ -1,0 +1,42 @@
+nav{
+   display: flex;
+   align-items: center;
+   width: 50%;
+   justify-content: flex-end; 
+   
+
+   ul {
+      display: flex;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+
+      a {
+         text-decoration: none;
+         margin: 2rem;
+         
+         }
+   li{
+      color: $color-rouge;
+      font-size: 24px;
+     
+     }
+   }
+   .nav-active {
+      position: relative;
+ 
+      &::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: $color-rouge;
+        border-radius: 10px;
+        text-decoration: underline;
+        position: absolute;
+        
+    }
+    
+    }
+
+   
+   }

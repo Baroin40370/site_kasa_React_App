@@ -1,0 +1,15 @@
+ footer{
+        width: 100%;
+        background-color:$color-footer;
+        display: flex;
+        flex-wrap: wrap;
+       }
+    h4 {
+        color:$color-blanc;
+        font-size: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+    }
+    
