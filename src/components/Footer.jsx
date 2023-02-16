@@ -1,6 +1,6 @@
 import React from 'react'
 import Logofooter from './Logofooter'
-import Logo from './Logofooter'
+
 const Footer = () => {
   return (
     <footer>

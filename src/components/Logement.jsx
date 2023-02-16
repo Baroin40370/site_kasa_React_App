@@ -1,17 +1,16 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
 import Card from './Card'
+import { useContext } from 'react'
+import DataContext from '../context/DataContext'
+
 const Logement = () => {
-  const [data, setData] = useState([])
-  useEffect(() => {
-    axios.get('./data.json').then((res) => setData(res.data))
-  }, [])
+  const { data } = useContext(DataContext)
+  //console.log(data)
   return (
     <section className="logement">
       <ul>
-        {data.map((logements, id) => (
-          <Card key={id} logements={logements} />
+        {data.map((data) => (
+          <Card key={data.id} data={data} />
         ))}
       </ul>
     </section>

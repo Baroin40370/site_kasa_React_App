@@ -1,0 +1,11 @@
+.collapse{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .accordion{
+        width: 80%;
+        margin:2rem 0 0 2rem;
+    }
+}

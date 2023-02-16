@@ -1,13 +1,12 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = ({ titre, image, description }) => {
   return (
-    <div
-      className="banner"
-      aria-label="paysage bord de mer avec montagnes et sapins"
-    >
+    <div className="banner">
       <div className="title">
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1>{titre}</h1>
+
+        <img src={image} alt={description} />
       </div>
     </div>
   )

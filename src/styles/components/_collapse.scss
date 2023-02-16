@@ -1,0 +1,49 @@
+.accordion {
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    .title {
+        background:$color-rouge;
+        width: 100%;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 15px;
+        border-radius: 10px;
+        h2 {
+            padding: 15px 0;
+            font-size: 20px;
+        }
+        img {
+            width: 20px;
+            transform: rotate(0deg);
+            transition: transform 0.2s ease-in-out;
+            &.active {
+            transform: rotate(180deg)
+        }
+      }
+      
+    }
+    .content{
+        padding: 30px;
+        background: #F2EEEE;
+        border-radius: 5px;
+        span{
+            font-size: 24px;
+            color: $color-rouge;
+            }
+        ul li{
+            font-size: 24px;
+            color: $color-rouge;
+        }    
+    }
+}
+
+
+
+
+
+
+
+

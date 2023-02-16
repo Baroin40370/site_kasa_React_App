@@ -1,0 +1,109 @@
+.fiche_logement{
+.des{
+    li{
+        display: none;
+    }
+    .nav-active {
+        position: relative;
+   
+        &::after {
+          content: "";
+          height: 1px;
+          width: 100%;
+          background: $color-rouge;
+          border-radius: 10px;
+          text-decoration: underline;
+          position: absolute;
+          }
+        }
+       }
+       section{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: space-between;
+        .titre{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-left: 2rem;
+        h1{
+            font-weight: 500;
+            font-size: 36px;
+            color:  $color-rouge;
+        }
+        h2{
+            font-weight: 500;
+            font-size: 18px;
+            color:  $color-rouge;
+        }
+      }
+      .host{
+        display: flex;
+        margin-right: 2rem;
+        flex-direction: column;
+        .infos{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+            p{
+                color: $color-rouge;
+                margin-right: 10px;
+                font-size: 18px;
+            }
+            .star{
+                color: $color-rouge;
+                width: 30px;
+                height: 30px;
+            }
+        }
+      }
+    }
+    .tags{
+        display: flex;
+        align-items: flex-end;
+        margin-left:2rem;
+        width: 80%;
+       
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        li{
+            min-width: 115px;
+            min-height: 25px;
+            border-radius: 15px;
+            padding: 7px;
+            background:$color-rouge;
+            color:  $color-blanc;
+            margin:1rem 1rem 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      } 
+    }
+    .description{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            .star{
+               margin-right: 2rem;
+               padding-top: 15px;
+            }
+            .rectangle{
+                width: 42%;
+                margin: 0 2rem 0 2rem;
+            }
+        }
+        
+            
+        
+}

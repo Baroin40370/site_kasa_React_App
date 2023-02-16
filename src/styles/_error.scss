@@ -1,0 +1,40 @@
+.error{
+    h1{
+        
+        font-style: normal;
+        font-weight: 700;
+        font-size: 288px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color:$color-rouge;
+        
+        }
+        p{
+            color: $color-rouge;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .retour{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+           
+                li{
+                    position: absolute;
+                    bottom: 15%;
+                    text-decoration-line: underline;
+                    color: $color-rouge;
+                }
+                     
+        }
+}
