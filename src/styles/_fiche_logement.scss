@@ -19,7 +19,7 @@
        }
        section{
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         margin-top: 2rem;
         align-items: center;
         justify-content: space-between;
@@ -57,11 +57,6 @@
                 margin-right: 10px;
                 font-size: 18px;
             }
-            .star{
-                color: $color-rouge;
-                width: 30px;
-                height: 30px;
-            }
         }
       }
     }
@@ -70,7 +65,7 @@
         align-items: flex-end;
         margin-left:2rem;
         width: 80%;
-       
+        margin-top: 1rem;
         ul{
             display: flex;
             align-items: center;
@@ -89,15 +84,14 @@
         }
       } 
     }
+    .star{
+        margin-right: 2rem;
+    }
     .description{
             display: flex;
             flex-flow: row wrap;
             align-items: baseline;
             justify-content: space-between;
-            .star{
-               margin-right: 2rem;
-               padding-top: 15px;
-            }
             .rectangle{
                 width: 42%;
                 margin: 0 2rem 0 2rem;

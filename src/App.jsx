@@ -13,7 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/propos" element={<Propos />} />
-          <Route path="/fiche_logement/:id/*" element={<Fiche_Logement />} />
+          <Route path="/fiche_logement/:id" element={<Fiche_Logement />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </DataProvider>

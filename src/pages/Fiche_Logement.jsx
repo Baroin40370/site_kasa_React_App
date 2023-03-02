@@ -12,10 +12,15 @@ import Error from './Error'
 function Fiche_Logement() {
   const { data } = useContext(DataContext)
   const { id } = useParams()
+  if (!data.length) {
+    //console.log('etape 1')
+    return <div></div>
+  }
   const d = data.find((l) => {
     return l.id === id
   })
   if (!d) {
+    //console.log('etape 2')
     return <div>{<Error />}</div>
   }
   //console.log(d)
@@ -42,8 +47,6 @@ function Fiche_Logement() {
               <img src={host.picture} alt={host.name} />
             </div>
           </div>
-        </section>
-        <section className="description">
           <div className="tags">
             <ul>
               {d.tags.map(function (element, index) {
@@ -52,6 +55,8 @@ function Fiche_Logement() {
             </ul>
           </div>
           <Stars ratings={ratings} color="#FF6060" size="30px" />
+        </section>
+        <section className="description">
           <div className="rectangle">
             <Collapse title="Description" content={d.description} />
           </div>

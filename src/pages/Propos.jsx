@@ -8,7 +8,9 @@ const Propos = () => {
   return (
     <div>
       <Header />
-      <Banner image={Banner2} description="paysage montagnes et sapins" />
+      <div className="proposbanner">
+        <Banner image={Banner2} description="paysage montagnes et sapins" />
+      </div>
       <section className="collapse">
         <Collapse
           title="Fiabilité"

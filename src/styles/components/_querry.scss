@@ -1,0 +1,216 @@
+@media(max-width: 658px){
+   nav{
+        ul{
+            li{
+                text-transform : uppercase;
+                font-size: 12px;
+                font-Weight: 500;
+            }
+            a{
+                margin: 20px 20px 32px 0px;
+            }
+          }
+        }
+        .logoheader img{
+        width: 145px;
+        height: 47px;
+      }
+    
+      .banner{
+        border-radius: 10px;
+        text-align: left;
+        height: 111px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        h1{
+        font-size: 24px;
+        }  
+      }
+      .logement{
+        border-radius: unset;
+        background-color: unset;
+        width: 100%;
+        margin:unset;
+        padding: unset;
+          ul{
+            padding-left:13px;
+            li{
+              height: 255px;
+              width: 100%;
+              margin: 0px 20px 25px 20px;
+                
+              }
+          }
+      }
+      .container-slider{
+        border-radius: 10px;
+        margin: 0px 20px 10px 32px;
+        height: 255px;
+        .prev{
+          left: 0px;
+        }
+        .next{
+          right: 0px;
+        } 
+          .btn-slide{
+            img{
+              width: 11.67px;
+              height: 19.8px;
+            }
+        }
+      }
+      .fiche_logement{
+        section{
+          flex-flow: row wrap;
+        .titre {
+          flex-flow: row wrap;
+          h1{
+            font-size: 18px;
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          h2{
+           font-size: 14px;
+           width: 100%;
+           margin-bottom: 10px;
+          }
+        }
+        .host:nth-child(2){
+          order:4;
+          width: 20%;
+            p{
+              font-size: 12px;
+            }
+            img{
+              width: 32px;
+              height: 32px;
+            } 
+        }
+        .tags:nth-child(3) {
+            order:2;
+            margin-top: unset;
+            width: 100%;
+             ul{
+              flex-flow: row wrap;
+              justify-content: flex-start;
+              li{
+                border-radius: 5px;
+                min-width:84px;
+                min-height: 18px;
+                font-size: 10px;
+                margin: 10px 10px 0px 0px;
+                }
+              }   
+        }
+        .star:nth-child(4){
+          order: 3;
+          margin: 15px 0px 1rem 2rem;
+            svg{
+              width: 15px;
+            }
+        }
+       }
+       .description{
+          .rectangle{
+            width: 100%;
+            margin: 0px 20px 30px 33px;
+           .accordion{
+               margin-bottom: unset;
+               .content{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                span{
+                font-size: 12px;
+                }
+                ul{
+                  li{
+                    font-size: 12px;
+                  }
+                }
+               }
+               .title{
+                padding: 5px;
+                h2{
+              font-size: 13px;
+              padding: 5px;
+                }
+                img{
+                  width: 13px;
+                }
+             }
+            }
+          }
+       }
+      
+      }
+      .proposbanner{
+        .banner{
+        height: 223px;
+        .title{
+          justify-content: flex-start;
+          padding: unset;
+          img{
+           background-image: url('../../assets/img/propos.png');
+          }
+        }
+        }
+      }
+      .collapse{
+        width: unset;
+        margin: 10px 36px 10px 17px;
+        .accordion{
+          width: 100%;
+         .title{
+            padding: 5px;
+             h2{
+            font-size: 13px;
+            padding: 10px;
+             }
+             img{
+              width: 13px;
+             }
+           }
+           .content{
+            span{
+              font-size: 12px;
+            }
+          
+           }
+        }
+      }.error{
+        main{
+         display: flex;
+         flex-direction: column;
+        h1{
+          font-size: 96px;
+          margin-bottom: 1rem;
+        }
+        p{
+          font-size: 18px;
+          margin: 0 2rem 2rem 2rem;
+          text-align: center;
+        }
+        ul li{
+          font-size: 14px;
+          margin-top: 7rem;
+        }
+      }
+    } 
+
+      footer{
+        .logofooter{
+         img{
+          width: 122px;
+          height: 39.44px;
+         }
+      }
+      h4{
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }   
+}
