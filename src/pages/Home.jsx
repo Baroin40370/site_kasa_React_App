@@ -8,6 +8,7 @@ import banner from '../assets/img/banner.png'
 const Home = () => {
   return (
     <div className="home">
+      <title>Accueil</title>
       <Header />
       <Banner
         titre="Chez vous, partout et ailleurs"

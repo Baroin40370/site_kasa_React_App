@@ -7,6 +7,7 @@ import Banner2 from '../assets/img/banner2.png'
 const Propos = () => {
   return (
     <div>
+      <title>Propos</title>
       <Header />
       <div className="proposbanner">
         <Banner image={Banner2} description="paysage montagnes et sapins" />
