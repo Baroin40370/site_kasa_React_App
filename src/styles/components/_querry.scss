@@ -161,6 +161,9 @@
         .title{
           justify-content: flex-start;
           padding: unset;
+          h1{
+            display: none;
+          }
         img{
            background-image: url('../../assets/img/propos.png');
           }

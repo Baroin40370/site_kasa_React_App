@@ -11,25 +11,25 @@ import Error from './Error'
 
 function Fiche_Logement() {
   const { data } = useContext(DataContext)
+
   const { id } = useParams()
+
   if (!data.length) {
-    //console.log('etape 1')
     return <div></div>
   }
+
   const d = data.find((l) => {
     return l.id === id
   })
+
   if (!d) {
-    //console.log('etape 2')
     return <div>{<Error />}</div>
   }
-  //console.log(d)
+
   const tableau = d.pictures
-  //console.log(tableau)
   const ratings = d.rating
-  //console.log(ratings)
   const host = d.host
-  //console.log(d.tags)
+
   return (
     <div className="fiche_logement">
       <title>{d.title}</title>

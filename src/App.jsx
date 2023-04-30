@@ -5,7 +5,8 @@ import Fiche_Logement from './pages/Fiche_Logement'
 import Home from './pages/Home'
 import Propos from './pages/Propos'
 import { DataProvider } from './context/DataContext'
-
+/*j'englobe toutes mes pages (qui contiennent mes composants) avec mon provider pour accéder au contexte, 
+le chemin '*' de la page d'erreur fonctionne si l'URL ne correspond a rien de déclaré */
 const App = () => {
   return (
     <BrowserRouter>

@@ -1,14 +1,18 @@
 import { createContext, useState, useEffect } from 'react'
-import axios from 'axios'
-
+/*Je crée un Contexte */
 const DataContext = createContext({})
 export const DataProvider = ({ children }) => {
   const [data, setData] = useState([])
+  /*J'utilise le hook useEffect pour récupèrer mes données et les injecter dans mon tabeau data, 
+  j'ajoute comme deuxième argument un tableau de dépendances vide afin qu'il ne s'exécute qu'une seule fois*/
   useEffect(() => {
-    axios.get('/data.js').then((res) => setData(res.data))
+    async function fetchData() {
+      const response = await fetch(`/data.js`)
+      const data = await response.json()
+      setData(data)
+    }
+    fetchData()
   }, [])
-  //console.log(data)
-
   return (
     <DataContext.Provider value={{ data }}>{children}</DataContext.Provider>
   )

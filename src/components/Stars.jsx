@@ -1,24 +1,14 @@
-import React, { useState } from 'react'
-import { Rating } from 'react-simple-star-rating'
+import Star from './Star'
 
 const Stars = ({ ratings, color, size }) => {
-  //console.log(ratings)
-  const [rating, setRating] = useState(0)
-
-  // Catch Rating value
-  const handleRating = (rate) => {
-    console.log(rate)
-    setRating(rate)
-  }
+  let grey = '#d2d2d2'
   return (
     <div className="star">
-      <Rating
-        readonly="true"
-        onClick={handleRating}
-        initialValue={ratings}
-        fillColor={color}
-        size={size}
-      />
+      <Star color={ratings > 0 ? color : grey} size={size}></Star>
+      <Star color={ratings > 1 ? color : grey} size={size}></Star>
+      <Star color={ratings > 2 ? color : grey} size={size}></Star>
+      <Star color={ratings > 3 ? color : grey} size={size}></Star>
+      <Star color={ratings > 4 ? color : grey} size={size}></Star>
     </div>
   )
 }
