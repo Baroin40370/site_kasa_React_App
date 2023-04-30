@@ -5,7 +5,7 @@ import DataContext from '../context/DataContext'
 
 const Logement = () => {
   const { data } = useContext(DataContext)
-
+  //console.log(data)
   return (
     <section className="logement">
       <ul>

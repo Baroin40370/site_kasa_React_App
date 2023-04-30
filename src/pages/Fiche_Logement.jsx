@@ -27,7 +27,7 @@ function Fiche_Logement() {
   }
 
   const tableau = d.pictures
-  const ratings = d.rating
+  const ratings = parseInt(d.rating)
   const host = d.host
 
   return (
