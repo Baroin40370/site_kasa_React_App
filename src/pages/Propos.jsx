@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 import Banner2 from '../assets/img/banner2.png'
-/*j'appelle mes composants et je passe en props les informations nécessaires */
+
 const Propos = () => {
   return (
     <div>
