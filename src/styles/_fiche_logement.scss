@@ -21,13 +21,20 @@
         display: flex;
         flex-flow: row wrap;
         margin-top: 2rem;
-        align-items: center;
-        justify-content: space-between;
+        width: 100%;
+        .host{
+            display: flex;
+            margin-right: 2rem;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
         .titre{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             margin-left: 2rem;
+            margin-right: 2rem;
         h1{
             font-weight: 500;
             font-size: 33px;
@@ -38,15 +45,10 @@
             font-size: 18px;
             color:  $color-rouge;
         }
-      }
-      .host{
-        display: flex;
-        margin-right: 2rem;
-        flex-direction: column;
-        .infos{
+      }.infos{
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            margin-bottom: 15px;
             img{
                 width: 64px;
                 height: 64px;
@@ -59,12 +61,16 @@
             }
         }
       }
-    }
+    }.partie2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-flow: row nowrap;
     .tags{
         display: flex;
         align-items: flex-end;
-        margin-left:2rem;
-        width: 80%;
+        margin-left: 2rem;
         margin-top: 1rem;
         ul{
             display: flex;
@@ -87,9 +93,10 @@
     .star{
         margin-right: 2rem;
     }
+}
     .description{
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             align-items: baseline;
             justify-content: space-between;
             .rectangle{

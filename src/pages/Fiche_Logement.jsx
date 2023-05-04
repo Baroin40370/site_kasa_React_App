@@ -37,24 +37,27 @@ function Fiche_Logement() {
       <Slider key={tableau.index} tableau={tableau} />
       <main>
         <section>
-          <div className="titre">
-            <h1>{d.title}</h1>
-            <h2>{d.location}</h2>
-          </div>
           <div className="host">
+            <div className="titre">
+              <h1>{d.title}</h1>
+              <h2>{d.location}</h2>
+            </div>
+
             <div className="infos">
               <p>{host.name}</p>
               <img src={host.picture} alt={host.name} />
             </div>
           </div>
-          <div className="tags">
-            <ul>
-              {d.tags.map(function (element, index) {
-                return <li key={index}>{element}</li>
-              })}
-            </ul>
+          <div className="partie2">
+            <div className="tags">
+              <ul>
+                {d.tags.map(function (element, index) {
+                  return <li key={index}>{element}</li>
+                })}
+              </ul>
+            </div>
+            <Stars ratings={ratings} color="#FF6060" size="30px" />
           </div>
-          <Stars ratings={ratings} color="#FF6060" size="30px" />
         </section>
         <section className="description">
           <div className="rectangle">
